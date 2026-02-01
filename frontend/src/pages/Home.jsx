@@ -1,8 +1,13 @@
+
 import React from 'react'
+import Header from '../components/Header'
+import ServiceMenu from '../components/ServiceMenu'
 
 const Home = () => {
   return (
     <div>
+      <Header/>
+      <ServiceMenu/>
     </div>
   )
 }

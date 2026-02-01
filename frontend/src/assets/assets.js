@@ -15,6 +15,8 @@ import paintinghand from './paintinghand.jpg'
 import inspiration from './inspiracion.jpg'
 import pinkjournal from './pink_journal.jpg'
 import ballerina_lg from './ballerina_lg.jpg'
+import profile_pic from './profile_closeup.png'
+import dropdown_icon from './dropdown.png'
 
 export const assets = {
     blueflower1, 
@@ -27,25 +29,32 @@ export const assets = {
     paintinghand,
     inspiration,
     pinkjournal,
-    ballerina_lg
+    ballerina_lg,
+    profile_pic,
+    dropdown_icon
 }
 
 export const option_list = [
     {
-        option_name: 'Calm',
-        option_img: option_1
+        option_name: '1:1 Session',
+        option_img: option_1,
+        service: 'individual'
     },
     {
-        option_name: 'Mental health',
-        option_img: option_2
+        option_name: 'Group Session',
+        option_img: option_2,
+        service: 'group'
     },
     {
-        option_name: 'Clear minds',
-        option_img: option_3
+        option_name: 'Events',
+        option_img: option_3,
+        service: 'events'
     },
     {
-        option_name: 'Painting',
-        option_img: option_4
+        option_name: 'special migration',
+        option_img: option_4,
+        service: 'migration'
+
     }
 ]
 
