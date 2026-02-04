@@ -14,7 +14,7 @@ const MoreInfo = () => {
       <p>See our list of services and latest events, readings and reviews</p>
   <div className='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] justify-center gap-8 pt-5 gap-y-6'>
         { info_list.slice(0,4).map((item, index) => (
-            <div onClick={()=>navigate(`/appointment/${item._id}`)} className='sm:p-3 shadow-[2px_2px_6px_lightgray] rounded-2xl cursor-pointer hover:scale-105 hover:z-50 transition-all duration-400' key={index}>
+            <div onClick={()=>navigate(`/appointment/${item._id}`)} className='sm:p-3 shadow-navbar rounded-2xl cursor-pointer hover:scale-105 hover:z-50 transition-all duration-400' key={index}>
                 <div className='mx-auto aspect-square'>
                 <img className='object-cover w-full h-full rounded-t-2xl' src={item.img} alt="" />
                 </div>

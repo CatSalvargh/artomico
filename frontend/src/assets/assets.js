@@ -60,7 +60,7 @@ export const option_list = [
         service: 'group'
     },
     {
-        option_name: 'Grupo',
+        option_name: 'Grupos',
         option_img: option_3,
         service: 'events'
     },
@@ -71,7 +71,7 @@ export const option_list = [
 
     },
     {
-        option_name: 'Pack migración',
+        option_name: 'Soporte migración',
         option_img: kids4,
         service: 'migration'
 
