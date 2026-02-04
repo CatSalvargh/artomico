@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom'
 
 const ServiceMenu = () => {
   return (
-    <div id='serviceId' className='flex flex-col items-center gap-3 py-10 text-primary'>
-      <h1 className='font-bold text-xl'>Select your session type</h1>
-      <p className='w-full text-center text-md text-justified text-primary-light'>Check all the resources our team can offer and pick the approach that resonates best with you.</p>
-      <div className='flex sm:justify-center gap-10 w-full overflow-scroll'>
+    <div id='serviceId' className='flex flex-col items-center gap-3 py-10 text-primary mt-5'>
+      <h1 className='font-bold text-xl py-5'>Selecciona el tipo de sesión</h1>
+  <div className='grid grid-flow-col auto-cols-[minmax(180px,1fr)] gap-6 w-full overflow-x-auto py-3 shadow-navbar'>
         {option_list.map((item, index) => (
-          <Link className='flex flex-col items-center gap-2 py-4 text-sm font-medium cursor-pointer hover:-translate-y-2.5 hover:scale-110 transition-all duration-300  ' key={index} to={`/appointment/${item.service}`} >
-            <img className='rounded-full w-20 h-20 lg:w-30 lg:h-30 object-cover hover:border-4 border-primary-light' src={item.option_img} alt={item.option_name} />
-            <p className='text-center'>{item.option_name}</p>
+          <Link onClick={(() => scrollTo(0,0))} className='flex flex-col items-center gap-2 py-4 text-sm font-medium cursor-pointer hover:-translate-y-2.5 hover:scale-110 transition-all duration-300  ' key={index} to={`/appointment/${item.service}`} >
+            <img className='rounded-full w-10 aspect-square lg:w-30 object-cover border-10 border-double border-accent' src={item.option_img} alt={item.option_name} />
+            <p className=' text-center text-[1.15rem] font-bold'>{item.option_name}</p>
           </Link>
         ))}
+
       </div>
     </div>
   )

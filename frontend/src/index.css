@@ -1,10 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #49557e;
-  /* --color-primary-light: #43538f; */
-  --color-primary-light: #7083c3;
+
+  --breakpoint-xs: 26rem;
+  --breakpoint-sm: 32.5rem;
+  --breakpoint-md: 45rem;
+  --breakpoint-xl: 75rem;
+
+  --color-accent: #c3cebf;
+  --color-primary: #43538f;
+  --color-primary-light: #ccdeec;
+  --color-primary-med: #afd2ec;
   --color-whitesmoke: #f5f5f2;
+
+   --shadow-navbar: 0 0 0 white, 0em 0.25em 1.5em #e5ebf1;
+   --shadow-navButtonIn: 3px 3px 6px rgb(225, 225, 240), inset -2px -2px 3px #7f9fc8;
+   --shadow-header: -5px -5px 9px whitesmoke, 5px 5px 7px #5e687949 ; 
+   --shadow-buttonOut: -5px -5px 9px rgb(180, 180, 180), 5px 5px 7px #5e687949 ; 
+   --shadow-buttonIn: inset -3px -3px 10px rgb(220, 220, 220), inset 5px 5px 7px #5e687949 ;
 }
 
 .active hr{
@@ -14,3 +27,12 @@
 ::-webkit-scrollbar{
   @apply hidden
 }
+
+/* // Min ph 320 standard ph 420
+Breakpoint prefix	Minimum width	CSS
+// xs: 26rem (416px) -  Customized
+// sm	40rem (640px)	@media (width >= 40rem) { ... } // CUSTOM to 32.5rem (520px)
+// md	48rem (768px)	@media (width >= 48rem) { ... } CUSTOM to 45rem (720px)
+// lg	64rem (1024px)	@media (width >= 64rem) { ... }
+// xl	80rem (1280px)	@media (width >= 80rem) { ... } CUSTOM to 75rem (1200px)
+// 2xl	96rem (1536px)	@media (width >= 96rem) { ... } */
