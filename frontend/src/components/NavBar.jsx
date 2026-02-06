@@ -13,17 +13,17 @@ const NavBar = () => {
     <div className='w-screen flex items-center justify-between text-sm p-5 px-12 mb-5 shadow-navbar'>
         <img onClick={() => navigate('/') } className='w-35 sm:w-55 self-center translate-y-1 cursor-pointer' src={assets.logo_full} alt="" />
         <ul className='lg:flex items-start gap-5 text-md font-bold text-light hidden'>
-             <NavLink className='w-30 p-1 text-center text-primary rounded-[3px] shadow-buttonIn hover:bg-primary hover:text-white hover:scale-110' to='/'>
+             <NavLink className='w-30 p-1 text-center text-primary rounded-[3px] shadow-buttonIn hover:bg-primary hover:text-white hover:shadow-none hover:scale-110' to='/'>
                 <li className='py-1'>Home</li>
              </NavLink>
-             <NavLink className=' w-30 p-1 text-center  text-primary rounded-[3px] shadow-buttonIn hover:bg-primary hover:text-white hover:scale-110' to='/services'>
-                <li className='py-1'>Services</li>
+             <NavLink className=' w-30 p-1 text-center  text-primary rounded-[3px] shadow-buttonIn hover:bg-primary hover:text-white hover:shadow-none hover:scale-110' to='/services'>
+                <li className='py-1'>Servicios</li>
              </NavLink>
-             <NavLink className=' w-30 p-1 text-center  text-primary rounded-[3px] shadow-buttonIn hover:bg-primary hover:text-white hover:scale-110' to='/about' >
-                <li className='py-1'>About</li>
+             <NavLink className=' w-30 p-1 text-center  text-primary rounded-[3px] shadow-buttonIn hover:bg-primary hover:text-white hover:shadow-none hover:scale-110' to='/about' >
+                <li className='py-1'>Conócenos</li>
              </NavLink>
-             <NavLink className=' w-30 p-1 text-center  text-primary rounded-[3px] shadow-buttonIn hover:bg-primary hover:text-white hover:scale-110' to='/contact'>
-                <li className='py-1'>Contact</li>
+             <NavLink className=' w-30 p-1 text-center  text-primary rounded-[3px] shadow-buttonIn hover:bg-primary hover:text-white hover:shadow-none hover:scale-110' to='/contact'>
+                <li className='py-1'>Contacto</li>
              </NavLink>
         </ul>
         <div className="flex items-center gap-4">

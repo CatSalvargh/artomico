@@ -6,8 +6,11 @@ export const AppContext = createContext()
 //Context to access the below from any components
 const AppContextProvider = (props) => {
 
+    const ccySymbol = '€'
+
     const value = {
-        service_list
+        service_list, 
+        ccySymbol
     }
 
     return (
