@@ -1,11 +1,7 @@
 import blueflower1 from './blueflower1.jpg'
-import blueflower2 from './blueflower2.jpg'
-import blueflower3 from './blueflower3.jpg'
 import abstractcolors from './abstract_colors.jpg'
 import logo from './logo.png'
 import logo_full from './logo_full.png'
-import search_icon  from './search_icon.png'
-import basket_icon  from './basket_icon.png'
 
 import option_1  from './adult2_sq.jpg'
 import option_2  from './kids2.jpg'
@@ -13,40 +9,25 @@ import option_3  from './group3_sq.jpg'
 import option_4  from './group2_sq.jpg'
 
 import paintinghand from './paintinghand.jpg'
-import inspiration from './inspiracion.jpg'
-import pinkjournal from './pink_journal.jpg'
-import ballerina_lg from './ballerina_lg.jpg'
 import profile_pic from './profile_closeup.png'
 import dropdown_icon from './dropdown.png'
 import migrate from './migrar_sq.jpg'
-import migrate2 from './migrar2_sq.jpg'
 import adult from './adult_sq.jpg'
 import kids from './kids.jpg'
-import kids1 from './kids1.jpg'
 import kids2 from './kids2.jpg'
-import kids3 from './kids3.jpg'
 import kids4 from './kids4.jpg'
-import banner_img from './happy_nbg.png'
-import banner_img2 from './happy_2_nbg.png'
 import banner_img3 from './hand_plume.png'
+import ballerina_lg from './ballerina_lg.jpg'
+import inspiration from './inspiration.jpg'
 
 export const assets = {
     blueflower1, 
-    blueflower2,
-    blueflower3,
     abstractcolors,
     logo, 
     logo_full,
-    search_icon,
-    basket_icon,
     paintinghand,
-    inspiration,
-    pinkjournal,
-    ballerina_lg,
     profile_pic,
     dropdown_icon,
-    banner_img,
-    banner_img2,
     banner_img3
 }
 
