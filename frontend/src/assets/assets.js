@@ -3,6 +3,7 @@ import blueflower2 from './blueflower2.jpg'
 import blueflower3 from './blueflower3.jpg'
 import abstractcolors from './abstract_colors.jpg'
 import logo from './logo.png'
+import logo_full from './logo_full.png'
 import search_icon  from './search_icon.png'
 import basket_icon  from './basket_icon.png'
 
@@ -35,6 +36,7 @@ export const assets = {
     blueflower3,
     abstractcolors,
     logo, 
+    logo_full,
     search_icon,
     basket_icon,
     paintinghand,
@@ -52,80 +54,80 @@ export const option_list = [
     {
         option_name: 'Adulto',
         option_img: option_1,
-        service: 'individual'
+        servicetype: 'adults'
     },
     {
         option_name: 'Niños',
         option_img: option_2,
-        service: 'group'
+        servicetype: 'kids'
     },
     {
         option_name: 'Grupos',
         option_img: option_3,
-        service: 'events'
+        servicetype: 'group'
     },
     {
         option_name: 'Profesionales y Escuelas',
         option_img: option_4,
-        service: 'migration'
+        servicetype: 'pro_Schools'
 
     },
     {
         option_name: 'Soporte migración',
         option_img: kids4,
-        service: 'migration'
+        servicetype: 'migration'
 
     }
 ]
 
-export const info_list = [
+export const service_list = [
    { _id: "1_adult",
     name: "Arteterapia adultos",
     img: paintinghand,
     description: `La Arte terapia es una disciplina que utiliza los recursos expresivos del arte y del proceso creativo para promover el bienestar emocional, el autoconocimiento y desarrollo personal`,
-    category: "adults",
+    servicetype: "adults",
    },
    { _id: "2_kids",
     name: "Niños",
     img: kids,
     description: `Conoce nuestros talleres y lo que cuentan otras personas que ya han comenzado su autodescubrimiento a través de su creatividad. No es necesario ser un gran artista para ser creativo y empezar.`,
-    category: "kids",
+    servicetype: "kids",
    },
    { _id: "4_group",
     name: "Grupos",
     img: adult,
     description: `Conoce nuestros talleres y lo que cuentan otras personas que ya han comenzado su autodescubrimiento a través de su creatividad. No es necesario ser un gran artista para ser creativo y empezar con la arteterapia.`,
-    category: "groups",
+    servicetype: "groups",
    },
    { _id: "5_group_pro",
     name: "Escuelas y profesionales",
     img: kids2,
     description: `Conoce nuestros talleres y lo que cuentan otras personas que ya han comenzado su autodescubrimiento a través de su creatividad. No es necesario ser un gran artista para ser creativo y empezar.`,
-    category: "groups",
+    servicetype: "pro_Schools",
    },
    { _id: "6_reading",
     name: "Opiniones",
     img: inspiration,
     description: `Conoce nuestros talleres y lo que cuentan otras personas que ya han comenzado su autodescubrimiento a través de su creatividad. No es necesario ser un gran artista para ser creativo y empezar.`,
-    category: "reading",
+    servicetype: "reading",
    },
    { _id: "7_reading",
     name: "Consejos y lecturas",
     img: ballerina_lg,
     description: `En esta sección podrás encontrar artículos y estudios en relación a la Arteterapia y su eficacia en el tratamiento y prevención de algunas de las más comunes dolencias emocionales y la evidencia que avala esta técnica gentil y poderosa.`,
-    category: "reading"
+    servicetype: "reading"
    },
      { _id: "8_adult",
     name: "Adulto migración",
     img: migrate,
     description: `La Arte terapia es una disciplina que utiliza los recursos expresivos del arte y del proceso creativo para promover el bienestar emocional, el autoconocimiento y desarrollo personal.`,
-    category: "adults",
+    servicetype: "adults",
    },
    { _id: "3_kids",
     name: "Niños migración",
     img: kids4,
     description: `Conoce nuestros talleres y lo que cuentan otras personas que ya han comenzado su autodescubrimiento a través de su creatividad. No es necesario ser un gran artista para ser creativo y empezar.`,
-    category: "kids",
+    servicetype: "kids",
    },
 ]
 

@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Quintessential&display=swap');
 @import "tailwindcss";
+
+* {
+  font-family: Outfit, Georgia, 'Times New Roman', Times, serif;
+}
+
+.creative {
+  font-family: "Quintessential", serif;
+  font-weight: 600;
+}
 
 @theme {
 
@@ -13,12 +23,13 @@
   --color-light: #ccdeec;
   --color-med: #afd2ec;
   --color-whitesmoke: #f5f5f2;
+  --color-lightGray: rgb(230, 230, 230);
 
    --shadow-navbar: 0 0 0 white, 0em 0.25em 1.5em #e5ebf1;
-   --shadow-navButtonIn: 3px 3px 6px rgb(225, 225, 240), inset -2px -2px 3px #7f9fc8;
-   --shadow-header: inset 5px 5px 10px rgba(200, 230, 190, 0.6), inset -5px -5px 10px rgba(200, 230, 190, 0.6), -5px -5px 9px whitesmoke, 5px 5px 7px #5e687949 ; 
-   --shadow-buttonOut: -5px -5px 9px rgb(180, 180, 180), 5px 5px 7px #5e687949 ; 
-   --shadow-buttonIn: inset -3px -3px 10px rgb(220, 220, 220), inset 5px 5px 7px #5e687949 ;
+   --shadow-navButtonIn: 3px 3px 6px rgb(200, 225, 240), inset -1px -2px 3px rgba(100, 130, 220, 0.9);
+   --shadow-header: inset 5px 5px 10px rgba(200, 230, 190, 0.4), inset -5px -5px 10px rgba(200, 230, 190, 0.4), -5px -5px 9px whitesmoke, 5px 5px 7px #5e687949 ; 
+   --shadow-buttonOut: -1px -1px 9px rgb(200, 220, 230), 3px 3px 5px rgba(200, 220, 245, 0.6) ; 
+   --shadow-buttonIn: inset -3px -3px 10px rgb(200, 220, 230), inset 3px 3px 7px #5f8ad557 ;
 }
 
 .active hr{

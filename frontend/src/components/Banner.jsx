@@ -9,15 +9,15 @@ const Banner = () => {
 
   return (
     
-  <div className='grid grid-cols-[1.5fr_0.5fr] items-center bg-accent rounded-2xl rounded-br-[800px] rounded-tr-[200px] px-3 md:px-6 sm:px-10 lg:px-12 mt-8 mx-auto gap-6 overflow-visible w-[70vw] h-[40vh] shadow-header'>
+  <div className='grid grid-cols-[1.5fr_0.5fr] items-center bg-accent rounded-2xl rounded-br-[800px] rounded-tr-[200px] px-3 md:px-6 sm:px-10 lg:px-12 mt-8 mx-auto gap-6 overflow-visible w-[70vw] h-[40vh] shadow-[3px_3px_8px_#ccdeec,-3px_0_8px_#ccdeec]'>
      {/* left */}
-    <div className='flex flex-col pt-5 mb-3 pb-8 md:pl-8 lg:pl-16 xl:pl-20 2xl:pl-25 gap-4 text-white text-center text-xl md:text-2xl font-bold leading-12 text-shadow-[0px_1px_3px_black]'>
+    <div className='creative flex flex-col pt-5 mb-3 pb-8 md:pl-8 lg:pl-16 xl:pl-20 2xl:pl-25 gap-4 text-white text-center text-xl md:text-2xl font-bold leading-12 text-shadow-[0px_1px_3px_black]'>
         <p className='2xl:translate-x-80'>Explora tu</p>
-        <div className='z-5 w-44 font-extrabold -translate-x-30 p-8 italic text-shadow-[0px_2px_3px_black]'>
-            <p className='py-2 w-65 pl-10 text-amber-400 translate-x-20 -translate-y-13 md:translate-x-55 md:-translate-y-10 lg:translate-x-65 xl:translate-x-80 border-dotted border-2 border-whitesmoke rounded-br-full rounded-bl-full rounded-tl-full text-[1.8rem] tracking-widest shadow-navButtonIn backdrop-blur-xs '>
-            <span className='text-indigo-500'> Crea</span>
-            ti
-            <span className='text-cyan-500'>Vida</span>
+        <div className='z-5 w-44 -translate-x-30 p-8 text-shadow-[0px_2px_3px_black]'>
+            <p className='creative py-2 w-65 pl-10 text-amber-400 translate-x-20 -translate-y-13 md:translate-x-55 md:-translate-y-10 lg:translate-x-65 xl:translate-x-80 border-dotted border-2 border-whitesmoke rounded-br-full rounded-bl-full rounded-tl-full text-[1.8rem] tracking-widest shadow-navButtonIn backdrop-blur-xs '>
+            <span className='text-indigo-500'> CrEa</span>
+            Ti
+            <span className='text-cyan-500'>ViDa</span>
             d</p>
         </div>
         <p className='md:text-center -translate-y-20 leading-6'>Colorea tu vida</p>

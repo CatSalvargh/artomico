@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
 
+  //Reserved to navigate to saber mas
   const navigate = useNavigate();
 
   return (
@@ -11,15 +12,16 @@ const Header = () => {
     <div className='w-[92vw] h-[84vh] sm:h-[75vh] md:h-[65vh] lg:h-[38vw] xl:h-[35vw] mt-8 mx-auto py-7 xs:pt-30 xl:pt-40 bg-transparent relative rounded-2xl backdrop-blur-[5px]'>
         <div className='absolute flex flex-col items-center gap-8 w-full px-8 xs:items-center'>
             <h2 className='text-whitesmoke text-3xl sm:text-4xl lg:text-5xl text-shadow-[0_3px_7px_#49557e] sm:self-start'>¿Qué es la Arteterapia?</h2>
-             <p className='font-medium text-md sm:text-lg text-blue-950 text-shadow-[10px_2px_8px_whitsmore] text-justify'>La Arte terapia es una disciplina que utiliza los recursos expresivos del arte y del proceso creativo para promover el bienestar emocional, el autoconocimiento y desarrollo personal, así como para explorar emociones que a menudo puede ser difícil expresar con palabras.</p>
+             <p className='lg:w-[70%] lg:self-start text-md sm:text-lg lg:text-[1.25rem]  text-white text-shadow-[1px_1px_2px_black] text-justify'>La Arte terapia es una disciplina gentil y no invasiva que se basa en nuestro proceso creativo para incrementar el bienestar emocional, el autoconocimiento y desarrollo personal. <br />No hace falta maestría en ninguna técnica artística, sino estar abiertos a escuchar lo que nuestra creatividad tiene para decirnos. En Artómica acompañamos tu proceso y el de los que más amas, para que puedas reencontrarte a la vez que disfrutas creando en un espacio seguro y contenido.
+             </p>
 
              {/* Button Container */}
-             <div className=' w-full flex flex-col items-center justify-center sm:justify-start gap-4 px-4 xs:flex-row lg:justify-start'>
+             <div className=' w-full flex flex-col items-center justify-center sm:justify-start gap-4 lg:gap-10 px-4 xs:flex-row lg:justify-start'>
               <div className='w-32 h-10 md:w-42 md:h-11 grid items-center justify-center rounded-3xl shadow-buttonOut'>
-                <a href='#serviceId' className='w-31 h-9 md:w-41 md:h-10 py-1 rounded-3xl text-primary text-md xs:text-lg text-center  font-medium shadow-buttonIn hover:scale-105 transition-all duration-300 '>Reservar</a>
+                <a href='#serviceId' className='w-31 h-9 md:w-41 md:h-10 py-1 rounded-3xl text-whitesmoke text-shadow-[1px_1px_2px_black] text-md xs:text-lg text-center  font-medium tracking-widest shadow-buttonIn hover:scale-105 hover:bg-med transition-all duration-300 '>Reservar</a>
               </div>
               <div className='w-32 h-10 md:w-42 md:h-11 grid items-center justify-center rounded-3xl shadow-buttonOut'>
-                <a href='#serviceId' className='w-31 h-9 md:w-41 md:h-10 py-1 rounded-3xl text-primary text-md sm:text-lg text-center font-medium shadow-buttonIn hover:scale-105 transition-all duration-300 '>Saber más</a>
+                <a href='#serviceId' className='w-31 h-9 md:w-41 md:h-10 py-1 rounded-3xl text-whitesmoke text-shadow-[1px_1px_2px_black] text-md sm:text-lg text-center font-medium tracking-widest shadow-buttonIn hover:scale-105 hover:bg-med hover:shadow-light transition-all duration-300 '>Saber más</a>
              </div>
              </div>
         </div>
