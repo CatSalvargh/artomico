@@ -30,7 +30,7 @@ const Footer = () => {
             <div className='pt-5'>
                 <h3 className='text-[0.8rem] md:text-[0.9rem] font-bold text-primary'>Contáctanos</h3>
                 <ul className='flex flex-col gap-1 pt-3 cursor-pointer'>
-                    <li>+34 942 789 357</li>
+                    <li>+33 668 608 817</li>
                     <li> hola@artomica.com</li>
                 </ul>
             </div>

@@ -19,12 +19,14 @@ import kids4 from './kids4.jpg'
 import banner_img3 from './hand_plume.png'
 import ballerina_lg from './ballerina_lg.jpg'
 import inspiration from './inspiration.jpg'
+import contact_img from './contact.jpg'
 
 export const assets = { 
     about, 
     abstractcolors,
     logo, 
     logo_full,
+    contact_img,
     paintinghand,
     profile_pic,
     dropdown_icon,
