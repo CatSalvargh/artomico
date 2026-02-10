@@ -9,6 +9,7 @@ const Services = () => {
   const { service_list } = useContext(AppContext)
   const [filterList,setFilterList] = useState([])
   const navigate = useNavigate()
+  const [showFilter, setShowFilter ] = useState(false)
   
   //Match Filter list by servicetype
   const applyFilter = () => {
@@ -25,11 +26,14 @@ const Services = () => {
   }, [service_list, servicetype])
 
   return (
-    <div className='grid md:grid-cols-[0.5fr_3fr] gap-6 gap-x-12 p-8'>
+    <div className='grid md:grid-cols-[0.5fr_3fr] gap-6 gap-x-12 px-8 md:p-6'>
       {/* left */}
       <div>
         <div>
-          <p className='text-primary text-center'>Filtrar por</p>          <div className='flex md:flex-col gap-3 flex-wrap mt-4 text-center text-primary font-semibold'>
+          <p className='hidden sm:block text-primary text-center'>Filtrar por</p>
+          <button onClick={()=> setShowFilter(prev => !prev)} className={`p-1 border rounded text-sm w-20 transition all sm:hidden ${
+            showFilter ? 'bg-primary text-white' : '' }`}>Filtrar</button>          
+          <div className={`${showFilter ? 'flex' : 'hidden'} justify-between md:flex-col w-[80vw] md:w-[20vw] md:max-w-50 gap-3 flex-wrap mt-4 text-center text-primary font-semibold'`}>
             <p onClick={()=>navigate('/services')} className='px-3 py-1 rounded-[3px] shadow-buttonIn cursor-pointer'>Ver todos</p>
             <p onClick={()=> navigate('/services/adults')} className='px-3 py-1 rounded-[3px] shadow-buttonIn cursor-pointer'>Adulto</p>
             <p onClick={()=> navigate('/services/kids')} className='px-3 py-1 rounded-[3px] shadow-buttonIn cursor-pointer'>Niño</p>
@@ -41,7 +45,7 @@ const Services = () => {
       </div>
 
       {/* Right */}
-      <div className='This w-full grid gap-6 grid-cols-[repeat(auto-fit,minmax(120px,180px))]'>
+      <div className='This w-full grid gap-6 grid-cols-[repeat(auto-fit,minmax(120px,180px))] justify-center md:justify-start'>
         {
           filterList.map((item, index) => (
             <div onClick={()=>navigate(`/appointment/${item._id}`)} className='w-full h-fit md:h-60 shadow-navbar rounded-2xl cursor-pointer hover:scale-105 hover:z-50 transition-all duration-400' key={index}>

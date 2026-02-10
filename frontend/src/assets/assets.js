@@ -2,6 +2,8 @@ import abstractcolors from './abstract_colors.jpg'
 import logo from './logo.png'
 import logo_full from './logo_full.png'
 import about from './about.jpg'
+import menu_icon from './menu_icon.png'
+import close_menu_icon from './close_menu_icon.png'
 
 import option_1  from './adult2_sq.jpg'
 import option_2  from './kids2.jpg'
@@ -26,6 +28,8 @@ export const assets = {
     abstractcolors,
     logo, 
     logo_full,
+    menu_icon,
+    close_menu_icon,
     contact_img,
     paintinghand,
     profile_pic,

@@ -23,17 +23,17 @@ const Login = () => {
           state==='Sign Up'?
           <div >
             <label className='block text-primary font-medium' for='name'>Nombre Completo</label>
-            <input className='h-7 w-full md:w-70 border border-lightGray rounded-lg' type="text" onChange={(e) =>{setName(e.target.name)}} id='name' value={name} required/>
+            <input className='h-7 w-full md:w-70 border border-lightGray rounded-lg' type="text" onChange={(e) =>{setName(e.target.name)}} id='name' name='name' value={name} required/>
           </div> : ''
           }
         
           <div>
             <label className='block text-primary font-medium' for='email'>Email</label>
-            <input className='border border-lightGray rounded-lg h-7 w-full md:w-70' type="email" onChange={(e) =>{setName(e.target.email)}} id='email' value={email} required/>
+            <input className='border border-lightGray rounded-lg h-7 w-full md:w-70' type="email" onChange={(e) =>{setName(e.target.email)}} id='email' name='email' value={email} required/>
           </div>
           <div>
             <label className='block text-primary font-medium' for='password'>Contraseña</label>
-            <input className='border border-lightGray rounded-lg h-7 w-full md:w-70' type="password" onChange={(e) =>{setName(e.target.password)}} id='password' value={password} required/>
+            <input className='border border-lightGray rounded-lg h-7 w-full md:w-70' type="password" onChange={(e) =>{setName(e.target.password)}} id='password' name='password' value={password} required/>
           </div>
           <button className='mt-6 px-8 py-1 rounded-[10px] shadow-buttonIn cursor-pointer hover:bg-primary hover:text-white md:text-[1rem] hover:shadow-none hover:scale-110'>{state==='Sign Up'?'Crear Cuenta':'Conectarse'}</button>
           {state==='Sign Up'?
