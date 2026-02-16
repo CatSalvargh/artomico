@@ -18,8 +18,8 @@ const Header = () => {
 
              {/* Button Container */}
              <div className=' w-full flex items-center justify-center md:justify-start gap-4 xs:gap-8 mt-3 xs:px-4 xs:flex-row text-sm sm:text-[1rem] text-center text-whitesmoke text-shadow-[1px_1px_1px_#1a2450] font-medium tracking-widest'>
-                <a href='#serviceId' className='bg-amber-400 px-4 xs:px-3 h-9 w-[min(50%,160px)] py-1 rounded-3xl shadow-headerButtonIn hover:scale-105 hover:shadow-extraLight transition-all duration-300'>Reservar</a>
-                <a href='#serviceId' className='bg-med px-4 xs:px-3 h-9 w-[min(50%,160px)] py-1 rounded-3xl shadow-buttonIn hover:scale-105 hover:shadow-light transition-all duration-300'>Saber más</a>
+                <a href='#serviceId' className='bg-med px-4 xs:px-3 h-9 w-[min(50%,160px)] py-1 rounded-3xl shadow-buttonIn hover:scale-105 hover:shadow-light transition-all duration-300'>Reservar</a>
+                <a href='#serviceId' className='bg-amber-400 px-4 xs:px-3 h-9 w-[min(50%,160px)] py-1 rounded-3xl shadow-headerButtonIn hover:scale-105 hover:shadow-extraLight transition-all duration-300'>Saber más</a>
              </div>
         </div>
     </div>

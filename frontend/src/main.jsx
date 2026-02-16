@@ -5,8 +5,10 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import AppContextProvider from './context/AppContext'
 
+const basename = import.meta.env.BASE_URL || '/'
+
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename={basename}>
     <AppContextProvider>
       <App />
     </AppContextProvider>
