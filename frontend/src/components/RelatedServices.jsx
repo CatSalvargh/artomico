@@ -25,7 +25,7 @@ const RelatedServices = ({ serviceId, servicetype }) => {
         { relatedService.slice(0,4).map((item, index) => (
             <div onClick={()=> {navigate(`/appointment/${item._id}`); scrollTo(0,0)}} className='shadow-navbar rounded-2xl cursor-pointer hover:scale-105 transition-all duration-400' key={item._id || index}>
                 <div className='aspect-square'>
-          <img className='border-3 border-accent rounded-md object-cover' src={item.img} alt="" />
+          <img className='border-3 border-accent rounded-md object-cover' src={item.img} alt={`imagen de ${item.name2}`} />
                 </div>
                 <div className='flex flex-col gap-3 pt-2 px-4 text-primary'>
                     <h4 className='font-medium'>{item.name}</h4>

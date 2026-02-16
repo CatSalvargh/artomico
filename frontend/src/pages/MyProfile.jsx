@@ -20,12 +20,12 @@ const MyProfile = () => {
   const [isEdit, setIsEdit] = useState(false)
 
   return (
-    <div className='flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-12 text-darkGray py-5 px-15'>
-      <div className='w-[45vw] md:w-[30vw] lg:w-[25vw] md:mt-6 aspect-square'>
-        <img className='w-full object-cover rounded-xl shadow-buttonOut' src={userData.img} alt="" />
+    <div className='flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-12 text-darkGray pt-10 py-5 px-15'>
+      <div className='w-[45vw] md:w-[32vw] lg:w-[25vw] md:mt-6 aspect-square'>
+        <img className='w-full object-cover rounded-full shadow-buttonOut mb-6' src={userData.img} alt="imagen usuario" />
       </div>
 
-      <div className='flex flex-col'>
+      <div className='flex flex-col shadow-navbar p-6 sm:p-8 rounded-xl'>
         {
         isEdit ?
         <input type="text" value={userData.name} onClick={e => e.target.value = ''} onChange={e =>  setUserData(prev => ({...prev,name:e.target.value}))} className='border border-primary rounded-md pl-2 my-3 md:mt-5'/>
@@ -85,8 +85,8 @@ const MyProfile = () => {
         <div className='self-center'>
           {
           isEdit ?
-          <button onClick={() => setIsEdit(false)} className='mt-7 px-12 py-1 rounded-[10px] shadow-buttonIn cursor-pointer hover:bg-primary hover:text-white md:text-[1rem] hover:shadow-none hover:scale-110'>Guardar</button>
-          : <button onClick={() => setIsEdit(true)} className='mt-7 px-12 py-1 rounded-[10px] shadow-buttonIn cursor-pointer hover:bg-primary hover:text-white md:text-[1rem] hover:shadow-none hover:scale-110'>Editar</button>
+          <button onClick={() => setIsEdit(false)} className='bg-primary mt-7 px-12 py-1 rounded-[10px] shadow-buttonIn cursor-pointer hover:bg-primary hover:text-white md:text-[1rem] hover:shadow-none hover:scale-110'>Guardar</button>
+          : <button onClick={() => setIsEdit(true)} className='bg-primary text-white mt-7 px-12 py-1 rounded-[10px] cursor-pointer hover:bg-med md:text-[1rem] hover:scale-105'>Editar</button>
         }
         </div>
       </div>

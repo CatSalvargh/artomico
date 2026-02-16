@@ -16,13 +16,15 @@
   --breakpoint-xs: 26rem; /* (416px) */
   --breakpoint-sm: 32.5rem; /* (520px) */
   --breakpoint-md: 45rem; /* (720px) */
+  --breakpoint-mdlg: 55rem; /* (880px) */
   --breakpoint-xl: 75rem; /* (1200px) */
 
-  --color-accent: #c3cebf;
+  /*--color-accent: #c3cebf; Verde original*/
+  --color-accent: #ecce24e3;
   --color-primary: #43538f;
   --color-light: #e1f0fc;
   --color-extraLight: #e9f3fd;
-  --color-med: #afd2ec;
+  --color-med: #83bfcd;
   --color-whitesmoke: #f5f5f2;
   --color-lightGray: rgb(230, 230, 230);
   --color-darkGray: rgb(90, 90, 90);
@@ -30,8 +32,9 @@
    --shadow-navbar: 0 0 0 white, 0em 0.25em 1.5em #e5ebf1;
    --shadow-navButtonIn: 3px 3px 6px rgb(200, 225, 240), inset -1px -2px 3px rgba(100, 130, 220, 0.9);
    --shadow-header: inset 5px 5px 10px rgba(200, 230, 190, 0.4), inset -5px -5px 10px rgba(200, 230, 190, 0.4), -5px -5px 9px whitesmoke, 5px 5px 7px #5e687949 ; 
-   --shadow-buttonOut: -1px -1px 9px rgb(200, 220, 230), 3px 3px 5px rgba(200, 220, 245, 0.6) ; 
-   --shadow-buttonIn: inset -3px -3px 10px rgb(200, 220, 230), inset 3px 3px 7px #5f8ad557 ;
+   --shadow-buttonOut: 2px 2px 5px lightGray; 
+   --shadow-buttonIn: inset -1px -1px 8px #e1f0fc, inset 1px 1px 4px #e1f0fc;
+   --shadow-headerButtonIn: inset -1px -1px 8px #43538f, inset 3px 3px 8px #e0a81a;
 }
 
 .active hr{
