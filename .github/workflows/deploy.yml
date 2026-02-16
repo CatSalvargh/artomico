@@ -1,0 +1,62 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    # Avoid triggering this workflow when only the generated docs folder changes
+    paths-ignore:
+      - 'docs/**'
+      - 'frontend/docs/**'
+      - '.github/workflows/deploy.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies (frontend)
+        working-directory: ./frontend
+        run: npm ci
+
+      - name: Build frontend (Vite)
+        working-directory: ./frontend
+        run: npm run build
+
+      - name: Copy 404 fallback (if build created docs/index.html)
+        working-directory: ./frontend
+        run: node ./scripts/copy404.js
+
+      - name: Commit generated docs back to main branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs || true
+          if git diff --quiet --staged; then
+            echo "No changes in docs to commit"
+          else
+            git commit -m "chore(pages): update docs [skip ci]"
+            git push origin main
+          fi
+
+      - name: Setup GitHub Pages (ensure pages serve from main:/docs)
+        uses: actions/configure-pages@v3
+
+      - name: Create deployment
+        uses: actions/deploy-pages@v1
